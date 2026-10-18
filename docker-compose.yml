@@ -1,0 +1,16 @@
+services:
+  postgres:
+    image: postgres:16
+    container_name: ping-circle-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: pingcircle
+      POSTGRES_PASSWORD: pingcircle
+      POSTGRES_DB: pingcircle
+    ports:
+      - "5432:5432"
+    volumes:
+      - ping-circle-postgres-data:/var/lib/postgresql/data
+
+volumes:
+  ping-circle-postgres-data:
