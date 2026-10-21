@@ -34,3 +34,6 @@ backend/.agents/
 backend/.claude/
 backend/.cursor/
 backend/.devin/
+# Prisma generated client
+backend/src/generated/
+backend/generated/
