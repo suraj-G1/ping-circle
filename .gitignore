@@ -37,3 +37,4 @@ backend/.devin/
 # Prisma generated client
 backend/src/generated/
 backend/generated/
+backend/package-lock.json
